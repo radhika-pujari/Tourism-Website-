@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Places</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Favourite Places</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#places">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="display-4">Explore the Wonders</h1>
+            <p class="lead">Discover some of the most magnificent places around the world.</p>
+            <a href="#places" class="btn btn-primary btn-lg">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section id="places" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Favourite Places</h2>
+            <div class="row g-4">
+                <!-- Taj Mahal Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/tajmahal.jpg" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal</h5>
+                            <p class="card-text">If there was just one symbol to represent all of India, it would be the Taj Mahal.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Golden Temple Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/goldentemple.jpg" class="card-img-top" alt="Golden Temple">
+                        <div class="card-body">
+                            <h5 class="card-title">Golden Temple</h5>
+                            <p class="card-text">Amritsar is world-famous for the beautiful and highly revered Golden Temple.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mysore Palace Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/mysorepalace.jpg" class="card-img-top" alt="Mysore Palace">
+                        <div class="card-body">
+                            <h5 class="card-title">Mysore Palace</h5>
+                            <p class="card-text">The Mysore Palace is a historical palace and the royal residence at Mysore.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Varanasi Temple Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/varanasitemple.jpg" class="card-img-top" alt="Varanasi Temple">
+                        <div class="card-body">
+                            <h5 class="card-title">Varanasi Temple</h5>
+                            <p class="card-text">Varanasi Temple is one of the most famous Hindu temples dedicated to Lord Shiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About This Project</h2>
+            <p class="text-center">This project showcases some of the most iconic and beautiful places that are a testament to human creativity and cultural heritage. Each location holds a unique story and significance, inviting you to explore and appreciate their grandeur.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2024 Favourite Places. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
